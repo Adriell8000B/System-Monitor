@@ -6,6 +6,7 @@ add_executable(
 	blank
 	main.c
 	utils/cli-utils.c
+	health/health.c
 )
 
 target_include_directories(blank PUBLIC include)
