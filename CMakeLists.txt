@@ -6,6 +6,7 @@ add_executable(
 	blank
 	main.c
 	utils/cli-utils.c
+	utils/general-utils.c
 	health/health.c
 )
 
