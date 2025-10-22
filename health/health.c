@@ -1,16 +1,12 @@
 #include "health.h"
+#include "general-utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 char* server_status() {
-	char* origin = getenv("ORIGIN");
+	char* origin = getenv_string("ORIGIN");
 	char* command = malloc(100);
 	int status = 0;
-
-	if (origin == NULL) {
-		printf("Error reading env ORIGIN\n");
-		return "";
-	}
 
 	sprintf(command, "ping -c 1 %s > /dev/null 2>&1", origin);
 	status = system(command);
