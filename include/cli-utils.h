@@ -1,7 +1,7 @@
 #ifndef CLI_UTILS_INCLUDED
 #define CLI_UTILS_INCLUDED
 
-void line(char* type, unsigned int size);
+void separator(char* separator_type, unsigned int separator_size);
 void menu();
 
 #endif

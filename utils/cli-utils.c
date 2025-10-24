@@ -2,15 +2,15 @@
 #include <stddef.h>
 #include <stdio.h>
 
-void line(char* line_type, unsigned int line_size) {
-	if (line_type == NULL || line_size == 0) {
-		printf("Parameter line_type can't be NULL\nParameter size can't be 0");
+void separator(char* separator_type, unsigned int separator_size) {
+	if (separator_type == NULL || separator_size == 0) {
+		printf("Parameter separator_type can't be NULL\nParameter size can't be 0");
 		return;
 	}
 
-	for(size_t i = 0; i < line_size; i++) {
-		printf("%s", line_type);
+	for(size_t i = 0; i < separator_size; i++) {
+		printf("%s", separator_type);
 	}
 
-	printf("%s\n", line_type);
+	printf("%s\n", separator_type);
 }
