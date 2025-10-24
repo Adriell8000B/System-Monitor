@@ -1,1 +1,5 @@
-int main() {}
+#include "app.h"
+
+int main() {
+	start();
+}
